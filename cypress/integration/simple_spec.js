@@ -40,3 +40,24 @@ describe('Los estudiantes registro', function() {
         cy.get('.sweet-alert').contains('Ocurrió un error activando tu cuenta')
     })
 })
+
+//Busqueda de profesores
+describe('Búsqueda de profesores', function() {
+    it('Búsqueda de profesores', function() {
+        cy.visit('https://losestudiantes.co')
+        cy.contains('Cerrar').click()
+        cy.contains('Ingresar').click()
+        cy.get('.cajaLogIn').find('input[name="correo"]').click().type("varca.software@gmail.com")
+        cy.get('.cajaLogIn').find('input[name="password"]').click().type("Avargas1392*")
+        cy.get('.cajaLogIn').contains('Ingresar').click()
+        cy.get('.Select-option-group-label').should('not.be.visible')
+        cy.get('.Select-menu-outer').should('not.be.visible')
+        cy.get('.Select-placeholder').click().type("gloria cortes")
+        cy.get('.Select-option-group-label').should('be.visible')
+        cy.get('.Select-menu-outer').should('be.visible')
+        cy.get('.Select-option-group-label').should('contain', 'profesores')
+        cy.get('#react-select-required_error_checksum--option-0').should('contain', 'Gloria Cristina Cortes Buitrago - Ingeniería de Sistemas')
+        cy.get('#react-select-required_error_checksum--option-0').click()
+        cy.url().should('eq', 'https://losestudiantes.co/universidad-de-los-andes/ingenieria-de-sistemas/profesores/gloria-cristina-cortes-buitrago')
+    })
+})
