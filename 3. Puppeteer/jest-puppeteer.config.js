@@ -1,7 +1,8 @@
 module.exports = {
     launch: {
-        headless: true,
-        slowMo: false,
-        devtools: true
+        headless: false,
+        slowMo: 500,
+        devtools: true,
+        waitUntil: 'domcontentloaded'
     }
 }
