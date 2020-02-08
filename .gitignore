@@ -1,2 +1,4 @@
 /3. Puppeteer/node_modules/*
 /3. Puppeteer/package-lock.json
+/2. Protractor/node_modules/*
+/2. Protractor/package-lock.json
