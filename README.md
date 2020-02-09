@@ -8,7 +8,7 @@ A continuación se detallan las principales ventajas y desventajas de PlayWright
 
 * PlayWright es soportado por varios navegadores de los más populares (Chrome, Chromium, WebKit y Firefox), mientras que Puppeteer sólo funciona con Chrome y Chromium.
 
-* PlayWright provee APIs más faciles de probar.
+* PlayWright provee APIs más amigables.
 
 * PlayWright es contruido para mejorar Puppeteer. Dado lo anterior proporciona un controlador más capaz, incluyendo soporte para viewports móviles, táctiles, web y service workers, geolocalización, csp, políticas de cookies, permisos, accesibilidad, etc.
 
