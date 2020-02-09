@@ -10,8 +10,6 @@ A continuación se detallan las principales ventajas y desventajas de PlayWright
 
 ### Desventajas:
 
-* PlayWright se ejecuta principalmente en modo headless, mientras que Puppeteer se ejecuta de las 2 formas (headless y non-headless)
-
 * La documentación sobre PlayWright esta limitada a su respositorio en GitHub, mientras que la documentación de Puppeteer es soportada y mantenida por Google.
 
 ## 5. Resumen
