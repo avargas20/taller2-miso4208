@@ -46,5 +46,30 @@ describe("Probar punto 3 con Puppeteer", () => {
 
     }, timeout);
 
+    test("Registro fallido por password corto", async () => {
+
+        await page.goto(URL);
+        //await page.waitForSelector('form');
+        await page.type('input[formcontrolname=firstName]', 'Nicolas', { delay: 10 });
+        await page.type('input[formcontrolname=lastName]', 'Lema', { delay: 10 });
+        await page.type('input[formcontrolname=username]', 'n.lema', { delay: 10 });
+        await page.type('input[formcontrolname=password]', '123', { delay: 10 });
+        await page.click('button[class="btn btn-primary"]')
+
+        expect(await page.$eval('div[class="invalid-feedback"]', e => e.textContent)).toEqual('Password must be at least 6 characters')
+
+
+    }, timeout);
+
+    test("Boton cancelar retorna al login", async () => {
+
+        await page.goto(URL);
+        await page.click('a[class="btn btn-link"]')
+
+        expect(await page.$eval('h2', e => e.textContent)).toEqual('Login')
+
+
+    }, timeout);
+
 
 });
