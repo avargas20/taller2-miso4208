@@ -16,7 +16,7 @@ A continuación se detallan las principales ventajas y desventajas de PlayWright
 
 * La documentación sobre PlayWright esta limitada a su respositorio en GitHub, mientras que la documentación de Puppeteer es soportada y mantenida por Google.
 
-* 
+* El API de PlayWright aún se encuentra en construcción.
 
 ## 5. Resumen
 
