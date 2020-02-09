@@ -2,6 +2,16 @@
 
 ## 4. PlayWright
 
+A continuación se detallan las principales ventajas y desventajas de PlayWright con respecto a Puppeteer:
+
+### Ventajas:
+
+* PlayWright es soportado por varios navegadores de los más populares (Chrome, Chromium, WebKit y Firefox), mientras que Puppeteer sólo funciona con Chrome y Chromium.
+
+### Desventajas:
+
+* PlayWright se ejecuta principalmente en modo headless, mientras que Puppeteer se ejecuta de las 2 formas (headless y non-headless)
+
 ## 5. Resumen
 
 Se complementan algunas casillas entregadas, se agrega la información relevante para PlayWright y se agregan 2 nuevas filas: 
