@@ -1,5 +1,10 @@
 # Taller 2: E2E Testing 
 
+Integrantes:
+
+* Nicolas Lema
+* Adriana Vargas
+
 ## 4. PlayWright
 
 A continuación se detallan las principales ventajas y desventajas de PlayWright con respecto a Puppeteer:
